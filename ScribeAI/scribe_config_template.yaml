@@ -1,0 +1,69 @@
+# Scribe Configuration Template
+# Copy this file to 'scribe_config.yaml' and fill in your credentials
+
+# Confluence settings
+confluence:
+  # Your Atlassian domain (e.g., https://mycompany.atlassian.net/wiki)
+  url: "https://your-domain.atlassian.net/wiki"
+  
+  # The key of the Confluence space where documentation will be published
+  # You can find this in the space URL or space settings
+  space_key: "YOUR_SPACE_KEY"
+  
+  # Your Atlassian account email
+  username: "your-email@company.com"
+  
+  # API token from https://id.atlassian.com/manage-profile/security/api-tokens
+  api_token: "YOUR_CONFLUENCE_API_TOKEN"
+
+# AI settings
+ai:
+  # AI model to use (options: gpt-4, gpt-3.5-turbo, claude-3, etc.)
+  model: "gpt-4o"
+  
+  # Your OpenAI API key from https://platform.openai.com/api-keys
+  api_key: "YOUR_OPENAI_API_KEY"
+  
+  # API endpoint (default is OpenAI, change for other providers)
+  api_endpoint: "https://api.openai.com/v1/chat/completions"
+
+# Documentation generation settings
+settings:
+  # File patterns to ignore during analysis
+  ignore_patterns:
+    - "*.pyc"           # Python compiled files
+    - "__pycache__"     # Python cache directories
+    - ".git"            # Git repository data
+    - ".venv"           # Virtual environment
+    - "venv"            # Virtual environment
+    - "env"             # Virtual environment
+    - "node_modules"    # Node.js dependencies
+    - "*.log"           # Log files
+    - ".DS_Store"       # macOS system files
+    - "Thumbs.db"       # Windows system files
+    - "*.tmp"           # Temporary files
+    - "*.temp"          # Temporary files
+    - "build"           # Build output
+    - "dist"            # Distribution files
+    - "target"          # Maven/Gradle output
+    - "*.egg-info"      # Python package info
+    - ".pytest_cache"   # Pytest cache
+    - ".coverage"       # Coverage reports
+    - "htmlcov"         # HTML coverage reports
+    - ".idea"           # IntelliJ IDEA files
+    - ".vscode"         # VS Code settings
+    - "*.swp"           # Vim swap files
+    - "*.swo"           # Vim swap files
+    - "*.bak"           # Backup files
+    - "*.cache"         # Cache files
+    - "*.min.js"        # Minified JavaScript
+    - "*.min.css"       # Minified CSS
+  
+  # Whether to include private methods/functions (those starting with underscore)
+  include_private: false
+  
+  # Maximum file size to analyze in kilobytes
+  max_file_size_kb: 500
+  
+  # Whether to show a preview before publishing to Confluence
+  preview_before_publish: true
