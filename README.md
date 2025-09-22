@@ -82,27 +82,6 @@ cd Wiki-Fetch    # For Confluence API operations
 - **Languages**: Python 3.7+
 - **Frameworks**: Click (CLI), Requests (HTTP), PyYAML (Config)
 
-## 📁 Repository Structure
-
-```
-ai-development-tools/
-├── MetatronAI/          # Video summarization tool
-│   ├── video_summarizer/
-│   ├── requirements.txt
-│   └── README.md
-├── ScribeAI/            # Documentation generator
-│   ├── scribe/
-│   ├── main.py
-│   ├── requirements.txt
-│   └── README.md
-├── Wiki-Fetch/          # Confluence API client
-│   ├── wiki_fetch.py
-│   ├── config.py
-│   ├── requirements.txt
-│   └── README.md
-└── README.md           # This file
-```
-
 ## 🚀 Future Projects
 
 This repository will continue to grow with additional AI-powered development tools. Planned additions include:
@@ -112,19 +91,6 @@ This repository will continue to grow with additional AI-powered development too
 - **API Documentation**: Automated API documentation from code annotations
 - **Deployment Assistant**: AI-guided deployment and configuration management
 
-## 🤝 Contributing
-
-Contributions are welcome! Each project has its own contribution guidelines. Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Follow the coding standards for each project
-4. Add tests where applicable
-5. Submit a pull request
-
-## 📄 License
-
-Each project may have its own license. Please refer to individual project directories for specific licensing information.
 
 ## 🆘 Support
 
