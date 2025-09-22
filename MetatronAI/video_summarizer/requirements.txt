@@ -1,0 +1,15 @@
+# Core AI and ML dependencies
+openai-whisper>=20250625    # OpenAI Whisper for audio transcription
+torch>=2.0.0               # PyTorch for deep learning models
+transformers>=4.26.0       # Hugging Face transformers for BART summarization
+
+# OpenAI API integration
+openai>=1.0.0              # OpenAI API client for enhanced summarization
+
+# Video processing and utilities
+pytube>=15.0.0             # YouTube video downloading
+python-dotenv>=1.0.0       # Environment variable management
+tqdm>=4.27.0               # Progress bars for user feedback
+
+# Note: moviepy removed as it's not used in the current implementation
+# The app uses FFmpeg directly for audio extraction instead
